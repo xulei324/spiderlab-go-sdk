@@ -51,7 +51,7 @@ func GetDataSourceCol(host string, port string, username string, password string
 		log.Errorf("error:", err)
 		return nil, nil, err
 	}
-	collection := client.Database(database).Collection(col)
+	collection := client.Database(database).Collection(fmt.Sprintf("%s.%s", database, col))
 
 	return client, collection, nil
 }
