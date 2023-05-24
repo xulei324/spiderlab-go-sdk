@@ -97,8 +97,7 @@ func (s *CatMasterService) MasterTimeout(masterTimeout string) *CatMasterService
 // in your terminal:
 //
 // Example:
-//
-//	curl 'http://localhost:9200/_cat/master?help'
+//   curl 'http://localhost:9200/_cat/master?help'
 //
 // You can use Columns("*") to return all possible columns. That might take
 // a little longer than the default set of columns.

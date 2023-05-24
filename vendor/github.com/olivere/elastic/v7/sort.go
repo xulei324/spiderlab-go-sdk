@@ -94,9 +94,8 @@ func (info SortInfo) Source() (interface{}, error) {
 // https://www.elastic.co/guide/en/elasticsearch/reference/7.0/search-request-scroll.html.
 //
 // Example:
-//
-//	ss := elastic.NewSearchSource()
-//	ss = ss.SortBy(elastic.SortByDoc{})
+//   ss := elastic.NewSearchSource()
+//   ss = ss.SortBy(elastic.SortByDoc{})
 type SortByDoc struct {
 	Sorter
 }

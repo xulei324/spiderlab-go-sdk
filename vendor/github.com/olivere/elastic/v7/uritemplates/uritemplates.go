@@ -14,6 +14,7 @@
 //	values["repo"] = "uritemplates"
 //	expanded, _ := template.Expand(values)
 //	fmt.Printf(expanded)
+//
 package uritemplates
 
 import (

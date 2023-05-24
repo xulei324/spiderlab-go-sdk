@@ -13,12 +13,11 @@ package elastic
 // https://www.elastic.co/guide/en/elasticsearch/reference/7.0/search-aggregations-pipeline-movfn-aggregation.html#_pre_built_functions.
 //
 // Example:
-//
-//	agg := elastic.NewMovFnAggregation(
-//	  "the_sum", // bucket path
-//	  elastic.NewScript("MovingFunctions.stdDev(values, MovingFunctions.unweightedAvg(values))"),
-//	  10,        // window size
-//	)
+//   agg := elastic.NewMovFnAggregation(
+//     "the_sum", // bucket path
+//     elastic.NewScript("MovingFunctions.stdDev(values, MovingFunctions.unweightedAvg(values))"),
+//     10,        // window size
+//   )
 //
 // For more details, see
 // https://www.elastic.co/guide/en/elasticsearch/reference/7.0/search-aggregations-pipeline-movfn-aggregation.html.
